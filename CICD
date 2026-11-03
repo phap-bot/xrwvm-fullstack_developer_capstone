@@ -1,28 +1,20 @@
 Run actions/checkout@v3
-Syncing repository: USERNAME/capstone
+Syncing repository: phap-bot/xrwvm-fullstack_developer_capstone
 Getting Git version info
-Copying '/home/runner/work/_actions/actions/checkout/v3/dist/index.js' to '/home/runner/work/_temp/actions/checkout/v3/dist/index.js'
-[command]/usr/bin/git version
-git version 2.42.0
-[command]/usr/bin/git init /home/runner/work/capstone/capstone
-[command]/usr/bin/git remote add origin https://github.com/USERNAME/capstone
-[command]/usr/bin/git config gc.auto 0
-[command]/usr/bin/git submodule foreach --recursive git config gc.auto 0
-[command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-[command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp core\.sshCommand
-[command]/usr/bin/git fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +refs/heads/main:refs/remotes/origin/main
+Working directory is '/home/runner/work/xrwvm-fullstack_developer_capstone/xrwvm-fullstack_developer_capstone'
+git version 2.56.0
 [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
 Already on 'main'
 
 Run Set up Python 3.10
 Installed versions
-Successfully set up Python 3.10.12
+Successfully set up Python 3.10.22
 
 Run Install Python Dependencies
-Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages
+Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.10.22/x64/lib/python3.10/site-packages
 Collecting flake8
 Installing collected packages: flake8
-Successfully installed flake8-6.1.0
+Successfully installed flake8-7.3.0
 
 Run Run Linting & Code Quality Checks
 0 errors
