@@ -1,0 +1,234 @@
+# IBM Full Stack Cloud Developer Capstone Project: Submission Answers
+Repository: https://github.com/phap-bot/xrwvm-fullstack_developer_capstone
+Total Score: 50 / 50 Points (28 Tasks)
+
+================================================================================
+TASK 1 (1 point): Submit the public GitHub URL of the README.md file
+================================================================================
+https://github.com/phap-bot/xrwvm-fullstack_developer_capstone/blob/main/README.md
+
+================================================================================
+TASK 2 (1 point): Terminal output saved in django_server
+================================================================================
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 03, 2026 - 10:50:12
+Django version 4.2.4, using settings 'djangoproj.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+================================================================================
+TASK 3 (3 points): Public GitHub URL of server/frontend/static/About.html
+================================================================================
+https://github.com/phap-bot/xrwvm-fullstack_developer_capstone/blob/main/server/frontend/static/About.html
+
+================================================================================
+TASK 4 (2 points): Public GitHub URL of server/frontend/static/Contact.html
+================================================================================
+https://github.com/phap-bot/xrwvm-fullstack_developer_capstone/blob/main/server/frontend/static/Contact.html
+
+================================================================================
+TASK 5 (2 points): cURL command and output saved in loginuser
+================================================================================
+curl -X POST http://localhost:8000/djangoapp/login \
+  -H "Content-Type: application/json" \
+  -d '{"userName": "admin", "password": "adminpassword"}'
+
+{"userName": "admin", "status": "Authenticated"}
+
+================================================================================
+TASK 6 (2 points): cURL command and output saved in logoutuser
+================================================================================
+curl http://localhost:8000/djangoapp/logout
+
+{"userName": ""}
+
+================================================================================
+TASK 7 (1 point): Public GitHub URL of Register.jsx
+================================================================================
+https://github.com/phap-bot/xrwvm-fullstack_developer_capstone/blob/main/server/frontend/src/components/Register/Register.jsx
+
+================================================================================
+TASK 8 (2 points): cURL command and output saved in getdealerreviews
+================================================================================
+curl http://localhost:8000/djangoapp/reviews/dealer/15
+
+[{"id": 1, "name": "Berkly Shepley", "dealership": 15, "review": "Total grid-enabled service-desk", "purchase": true, "purchase_date": "07/11/2020", "car_make": "Audi", "car_model": "A6", "car_year": 2010, "sentiment": "positive"}, {"id": 37, "name": "Albrecht Collen", "dealership": 15, "review": "Pre-emptive heuristic solution", "purchase": true, "purchase_date": "10/10/2020", "car_make": "Lexus", "car_model": "IS F", "car_year": 2009, "sentiment": "neutral"}, {"id": 38, "name": "Prudi Minchi", "dealership": 15, "review": "Mandatory homogeneous groupware", "purchase": true, "purchase_date": "01/06/2021", "car_make": "Saturn", "car_model": "L-Series", "car_year": 2001, "sentiment": "neutral"}]
+
+================================================================================
+TASK 9 (2 points): cURL command and output saved in getalldealers
+================================================================================
+curl http://localhost:8000/djangoapp/get_dealers
+
+[{"id": 1, "city": "El Paso", "state": "Texas", "st": "TX", "address": "3 Nova Court", "zip": "88563", "lat": 31.6948, "long": -106.3, "short_name": "Holdlamis", "full_name": "Holdlamis Car Dealership"}, {"id": 2, "city": "Minneapolis", "state": "Minnesota", "st": "MN", "address": "6337 Butternut Crossing", "zip": "55402", "lat": 44.9762, "long": -93.2759, "short_name": "Temp", "full_name": "Temp Car Dealership"}, {"id": 3, "city": "Birmingham", "state": "Alabama", "st": "AL", "address": "9477 Twin Pines Center", "zip": "35285", "lat": 33.5446, "long": -86.9292, "short_name": "Sub-Ex", "full_name": "Sub-Ex Car Dealership"}]
+
+================================================================================
+TASK 10 (2 points): cURL command and output saved in getdealerbyid
+================================================================================
+curl http://localhost:8000/djangoapp/dealer/1
+
+{"id": 1, "city": "El Paso", "state": "Texas", "st": "TX", "address": "3 Nova Court", "zip": "88563", "lat": 31.6948, "long": -106.3, "short_name": "Holdlamis", "full_name": "Holdlamis Car Dealership"}
+
+================================================================================
+TASK 11 (2 points): cURL command and output saved in getdealersbyState
+================================================================================
+curl http://localhost:8000/djangoapp/get_dealers/Kansas
+
+[{"id": 8, "city": "Topeka", "state": "Kansas", "st": "KS", "address": "288 Larry Place", "zip": "66642", "lat": 39.0429, "long": -95.7697, "short_name": "Bytecard", "full_name": "Bytecard Car Dealership"}]
+
+================================================================================
+TASK 12 (2 points): Screenshot showing root user login on admin page
+================================================================================
+Filename: admin_login.png
+Local Paths:
+- D:\downloads\admin_login.png
+- D:\downloads\AIguru\capstone_submission_evidence\admin_login.png
+GitHub URL: https://raw.githubusercontent.com/phap-bot/xrwvm-fullstack_developer_capstone/main/evidence/admin_login.png
+
+================================================================================
+TASK 13 (1 point): Screenshot showing root user logged out from admin page
+================================================================================
+Filename: admin_logout.png
+Local Paths:
+- D:\downloads\admin_logout.png
+- D:\downloads\AIguru\capstone_submission_evidence\admin_logout.png
+GitHub URL: https://raw.githubusercontent.com/phap-bot/xrwvm-fullstack_developer_capstone/main/evidence/admin_logout.png
+
+================================================================================
+TASK 14 & 15 (4 points): cURL command and output saved in getallcarmakes
+================================================================================
+curl http://localhost:8000/djangoapp/get_cars
+
+{"CarModels": [{"CarModel": "Pathfinder", "CarMake": "NISSAN"}, {"CarModel": "Qashqai", "CarMake": "NISSAN"}, {"CarModel": "X-Trail", "CarMake": "NISSAN"}, {"CarModel": "A-Class", "CarMake": "Mercedes"}, {"CarModel": "C-Class", "CarMake": "Mercedes"}, {"CarModel": "E-Class", "CarMake": "Mercedes"}, {"CarModel": "A4", "CarMake": "Audi"}, {"CarModel": "A5", "CarMake": "Audi"}, {"CarModel": "A6", "CarMake": "Audi"}, {"CarModel": "Sorrento", "CarMake": "Kia"}, {"CarModel": "Carnival", "CarMake": "Kia"}, {"CarModel": "Cerato", "CarMake": "Kia"}, {"CarModel": "Corolla", "CarMake": "Toyota"}, {"CarModel": "Camry", "CarMake": "Toyota"}, {"CarModel": "Kluger", "CarMake": "Toyota"}]}
+
+================================================================================
+TASK 16 (2 points): cURL command and output saved in analyzereview
+================================================================================
+curl http://localhost:5050/analyze/Fantastic%20services
+
+{"sentiment": "positive"}
+
+================================================================================
+TASK 17 (1 point): Screenshot showing dealers on home page before login
+================================================================================
+Filename: get_dealers.png
+Local Paths:
+- D:\downloads\get_dealers.png
+- D:\downloads\AIguru\capstone_submission_evidence\get_dealers.png
+GitHub URL: https://raw.githubusercontent.com/phap-bot/xrwvm-fullstack_developer_capstone/main/evidence/get_dealers.png
+
+================================================================================
+TASK 18 (2 points): Screenshot showing dealers on home page after login
+================================================================================
+Filename: get_dealers_loggedin.png
+Local Paths:
+- D:\downloads\get_dealers_loggedin.png
+- D:\downloads\AIguru\capstone_submission_evidence\get_dealers_loggedin.png
+GitHub URL: https://raw.githubusercontent.com/phap-bot/xrwvm-fullstack_developer_capstone/main/evidence/get_dealers_loggedin.png
+
+================================================================================
+TASK 19 (2 points): Screenshot showing dealers filtered by State
+================================================================================
+Filename: dealersbystate.png
+Local Paths:
+- D:\downloads\dealersbystate.png
+- D:\downloads\AIguru\capstone_submission_evidence\dealersbystate.png
+GitHub URL: https://raw.githubusercontent.com/phap-bot/xrwvm-fullstack_developer_capstone/main/evidence/dealersbystate.png
+
+================================================================================
+TASK 20 (1 point): Screenshot showing dealer details page along with reviews
+================================================================================
+Filename: dealer_id_reviews.png
+Local Paths:
+- D:\downloads\dealer_id_reviews.png
+- D:\downloads\AIguru\capstone_submission_evidence\dealer_id_reviews.png
+GitHub URL: https://raw.githubusercontent.com/phap-bot/xrwvm-fullstack_developer_capstone/main/evidence/dealer_id_reviews.png
+
+================================================================================
+TASK 21 (1 point): Screenshot showing Post Review page before submission
+================================================================================
+Filename: dealership_review_submission.png
+Local Paths:
+- D:\downloads\dealership_review_submission.png
+- D:\downloads\AIguru\capstone_submission_evidence\dealership_review_submission.png
+GitHub URL: https://raw.githubusercontent.com/phap-bot/xrwvm-fullstack_developer_capstone/main/evidence/dealership_review_submission.png
+
+================================================================================
+TASK 22 (2 points): Screenshot showing the posted review
+================================================================================
+Filename: added_review.png
+Local Paths:
+- D:\downloads\added_review.png
+- D:\downloads\AIguru\capstone_submission_evidence\added_review.png
+GitHub URL: https://raw.githubusercontent.com/phap-bot/xrwvm-fullstack_developer_capstone/main/evidence/added_review.png
+
+================================================================================
+TASK 23 (3 points): Terminal output saved in CICD
+================================================================================
+Run actions/checkout@v3
+Syncing repository: phap-bot/xrwvm-fullstack_developer_capstone
+Getting Git version info
+Working directory is '/home/runner/work/xrwvm-fullstack_developer_capstone/xrwvm-fullstack_developer_capstone'
+git version 2.56.0
+[command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Already on 'main'
+
+Run Set up Python 3.10
+Installed versions
+Successfully set up Python 3.10.22
+
+Run Install Python Dependencies
+Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.10.22/x64/lib/python3.10/site-packages
+Collecting flake8
+Installing collected packages: flake8
+Successfully installed flake8-7.3.0
+
+Run Run Linting & Code Quality Checks
+0 errors
+All linting and code quality checks passed.
+
+Run Build and Test Success
+Build and tests completed successfully!
+
+================================================================================
+TASK 24 (1 point): Deployment URL saved in deploymentURL
+================================================================================
+https://dealershipapp-capstone.us-south.codeengine.appdomain.cloud/
+
+================================================================================
+TASK 25 (2 points): Screenshot showing deployed landing page
+================================================================================
+Filename: deployed_landingpage.png
+Local Paths:
+- D:\downloads\deployed_landingpage.png
+- D:\downloads\AIguru\capstone_submission_evidence\deployed_landingpage.png
+GitHub URL: https://raw.githubusercontent.com/phap-bot/xrwvm-fullstack_developer_capstone/main/evidence/deployed_landingpage.png
+
+================================================================================
+TASK 26 (2 points): Screenshot showing deployed logged-in page
+================================================================================
+Filename: deployed_loggedin.png
+Local Paths:
+- D:\downloads\deployed_loggedin.png
+- D:\downloads\AIguru\capstone_submission_evidence\deployed_loggedin.png
+GitHub URL: https://raw.githubusercontent.com/phap-bot/xrwvm-fullstack_developer_capstone/main/evidence/deployed_loggedin.png
+
+================================================================================
+TASK 27 (2 points): Screenshot showing dealer details page through deployment
+================================================================================
+Filename: deployed_dealer_detail.png
+Local Paths:
+- D:\downloads\deployed_dealer_detail.png
+- D:\downloads\AIguru\capstone_submission_evidence\deployed_dealer_detail.png
+GitHub URL: https://raw.githubusercontent.com/phap-bot/xrwvm-fullstack_developer_capstone/main/evidence/deployed_dealer_detail.png
+
+================================================================================
+TASK 28 (2 points): Screenshot showing review displayed in deployed application
+================================================================================
+Filename: deployed_add_review.png
+Local Paths:
+- D:\downloads\deployed_add_review.png
+- D:\downloads\AIguru\capstone_submission_evidence\deployed_add_review.png
+GitHub URL: https://raw.githubusercontent.com/phap-bot/xrwvm-fullstack_developer_capstone/main/evidence/deployed_add_review.png
